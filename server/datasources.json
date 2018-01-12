@@ -1,0 +1,15 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "Monga": {
+    "host": "localhost",
+    "port": 27017,
+    "database": "bidnow",
+    "password": "",
+    "name": "Monga",
+    "user": "root",
+    "connector": "mongodb"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "name": "Car",
+  "plural": "cars",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "image": {
+      "type": "string"
+    },
+    "model": {
+      "type": "string"
+    },
+    "rent": {
+      "type": "string"
+    },
+    "available": {
+      "type": "boolean"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "vendor": {
+      "type": "belongsTo",
+      "model": "Vendor",
+      "foreignKey": ""
+    },
+    "bids": {
+      "type": "hasMany",
+      "model": "Bid",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

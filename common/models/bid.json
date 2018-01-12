@@ -1,0 +1,29 @@
+{
+  "name": "Bid",
+  "plural": "bids",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "val": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "client": {
+      "type": "belongsTo",
+      "model": "Client",
+      "foreignKey": ""
+    },
+    "car": {
+      "type": "belongsTo",
+      "model": "Car",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

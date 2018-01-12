@@ -1,0 +1,30 @@
+{
+  "name": "Vendor",
+  "plural": "vendors",
+  "base": "User",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "clients": {
+      "type": "hasMany",
+      "model": "Client",
+      "foreignKey": ""
+    },
+    "cars": {
+      "type": "hasMany",
+      "model": "Car",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
